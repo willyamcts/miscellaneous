@@ -7,10 +7,8 @@ Show in page:
 
 Running: 
 ```
-
 docker compose up -d --build 
-
-``
+```
 
 Open in `http://localhost`.
 
@@ -20,6 +18,6 @@ For tests block the internet access. `iptables`:
 # apply block
 iptables -I FORWARD -s <IP_CONTAINER> -j DROP
 
-# to revert
+# to revert block
 iptables -D FORWARD -s <IP_CONTAINER> -j DROP
 ```
